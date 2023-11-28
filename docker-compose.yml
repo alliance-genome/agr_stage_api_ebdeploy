@@ -4,6 +4,7 @@ services:
   api:
     container_name: agr.stage.api.server
     image: 100225593120.dkr.ecr.us-east-1.amazonaws.com/agr_java_software:stage
+    command: java -jar agr_api/target/agr_api.jar
     logging:
       driver: gelf
       options:
